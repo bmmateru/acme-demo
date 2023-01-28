@@ -1,4 +1,3 @@
-
 variable "eks_iam_role_name" {
 type = string
 default = "bmateru-eks-cluster-role"
@@ -43,4 +42,3 @@ variable "ec2_ssh_key" {
   type        = string
   default     = ".wosia.pem"
 }
-

@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "acme_prod"
+  name     = "acme_prod_azure"
   location = "westus2"
 }
 
@@ -40,5 +40,3 @@ resource "local_file" "kubeconfig" {
   filename     = "kubeconfig"
   content      = azurerm_kubernetes_cluster.cluster.kube_config_raw
 }
-
-

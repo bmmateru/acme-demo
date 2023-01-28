@@ -1,3 +1,12 @@
+terraform {
+  cloud {
+    organization = "BidiiCloud"
+    workspaces {
+      name = "acm-nginx"
+    }
+  }
+}
+
 provider "kubernetes" {
   config_path = "~/.kube/config"
 }
